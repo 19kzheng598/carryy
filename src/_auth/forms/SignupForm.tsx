@@ -48,7 +48,7 @@ const SignupForm = () => {
             <FormItem>
               <FormLabel>Username</FormLabel>
               <FormControl>
-                <Input placeholder="Username" {...field} />
+                <Input placeholder="username" {...field} />
               </FormControl>
               <FormDescription>
                 This is your public display name.
