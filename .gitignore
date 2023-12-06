@@ -1,0 +1,18 @@
+# Node.js
+node_modules/
+
+# Build artifacts
+dist/
+
+# Local development environment
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
