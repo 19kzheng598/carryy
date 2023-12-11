@@ -19,7 +19,7 @@ import { useUserContext } from '@/context/AuthContext';
         <section className="topbar">
             <div className="flex-between py-1 px-1">
                 <Link to="/" className="flex items-center justify-center">
-                    <img src="/public/carry.png" alt="carrylogo" className="w-16 h-16"/>
+                    <img src="dist/assets/icons/carry.svg" alt="carrylogo" className="w-16 h-16"/>
                     <h1 className="h3-bold">Carry!</h1>
                 </Link>
 
