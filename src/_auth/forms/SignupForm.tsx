@@ -68,7 +68,7 @@ const SignupForm = () => {
   return (
     <Form {...form}>
       <div className="sm:w-300 flex-center flex-col">
-        <img src='public/carry.png' alt='carry logo' className="w-32 h-32"/>
+        <img src='public/images/carry.png' alt='carry logo' className="w-32 h-32"/>
 
         <h1 className="h2-bold">Welcome to Carry!</h1>
 
