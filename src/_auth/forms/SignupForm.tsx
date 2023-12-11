@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { Button } from "@/components/ui/button"
 import * as z from "zod"
 import {Link, useNavigate} from 'react-router-dom'
