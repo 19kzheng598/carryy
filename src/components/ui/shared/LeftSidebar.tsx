@@ -21,7 +21,7 @@ const LeftSidebar = () => {
         <nav className="leftsidebar">
             <div className="flex flex-col">
                 <Link to="/" className="flex items-center justify-center">
-                    <img src="/public/carry.png" alt="carrylogo" className="w-20 h-20"/>
+                    <img src="dist/assets/icons/carry.svg" alt="carrylogo" className="w-20 h-20"/>
                 </Link>
                 <h2 className="h3-bold flex items-center justify-center">Carry!</h2>
                 
