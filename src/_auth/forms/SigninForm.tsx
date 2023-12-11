@@ -7,7 +7,6 @@ import {Form,FormControl,FormField,FormItem,FormLabel,FormMessage} from "@/compo
 import { Input } from "@/components/ui/input"
 import { SigninValidation } from '@/lib/validation'
 import Loader from "@/components/ui/shared/Loader"
-import { createUserAccount } from "@/lib/appwrite/api"
 import { useToast } from "@/components/ui/use-toast"
 import {useSignInAccount} from "@/lib/react-query/queriesAndMutations"
 import { useUserContext } from "@/context/AuthContext"
@@ -19,7 +18,7 @@ const SigninForm = () => {
   const navigate = useNavigate(); 
 
 
-  const{mutateAsync: signInAccount, isPending} = useSignInAccount();
+  const{mutateAsync: signInAccount} = useSignInAccount();
 
   // 1. Define your form. SigninValidation is pulled from index.ts validation 
   const form = useForm<z.infer<typeof SigninValidation>>({
