@@ -7,7 +7,6 @@ import {Form,FormControl,FormField,FormItem,FormLabel,FormMessage} from "@/compo
 import { Input } from "@/components/ui/input"
 import { SignupValidation } from '@/lib/validation'
 import Loader from "@/components/ui/shared/Loader"
-import { createUserAccount } from "@/lib/appwrite/api"
 import { useToast } from "@/components/ui/use-toast"
 import { useCreateUserAccount, useSignInAccount} from "@/lib/react-query/queriesAndMutations"
 import { useUserContext } from "@/context/AuthContext"
@@ -15,12 +14,12 @@ import { useUserContext } from "@/context/AuthContext"
 //Default hook 
 const SignupForm = () => {
   const { toast } = useToast()
-  const {checkAuthUser, isLoading: isUserLoading} = useUserContext();
+  const {checkAuthUser} = useUserContext();
   const navigate = useNavigate(); 
 
   const {mutateAsync: createUserAccount, isPending: isCreatingAccount} = useCreateUserAccount();
 
-  const{mutateAsync: signInAccount, isPending: isSigningIn} = useSignInAccount();
+  const{mutateAsync: signInAccount} = useSignInAccount();
 
   // 1. Define your form. SignupValidation is pulled from index.ts validation 
   const form = useForm<z.infer<typeof SignupValidation>>({
